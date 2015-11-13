@@ -326,25 +326,20 @@ _nanoTatva = {
 		$.post(_nanoTatva.enquiry_url,
 	        obj,
 	        function(data,status){
-	        	if(status == "success" && data.success){
-					if(obj.which == 0){
-						document.getElementById("pm_form_submit").value = "Sent Successfully";
-					}else if(obj.which == 1){
-						document.getElementById("c-submit-enq").value = "Sent Successfully";
-					}
-	        	}else{
-	        		if(obj.which == 0){
-						document.getElementById("pm_form_submit").value = "Failed. Try agin.";
-					}else if(obj.which == 1){
-						document.getElementById("c-submit-enq").value = "Failed. Try agin.";
-					}
-	        	}
-
+	        	var clicked_btn = null;
 	        	if(obj.which == 0){
+					clicked_btn = document.getElementById("pm_form_submit");
 					_nanoTatva.isSendingProd = false;
 				}else if(obj.which == 1){
+					clicked_btn = document.getElementById("c-submit-enq");
 					_nanoTatva.isSendingCont = false;
 				}
+	        	if(status == "success" && data.success){
+					clicked_btn.value = "Sent successfully";
+	        	}else{
+	        		clicked_btn.value = "Sending failed. Try agin.";
+	        	}
+	        	setTimeout(function(){ clicked_btn.value = "Send" }, 5000);
 	        	console.log(data.success+"|"+status);
 	        });
 	},
