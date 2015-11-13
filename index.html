@@ -410,8 +410,8 @@ window.onload = function(){
 	document.getElementById("c-submit-enq").onclick = function(){
 		_nanoTatva.sendProductEnuiry(false);
 	};
-	//_nanoTatva.inflateUI();
-	var url="https://docs.google.com/spreadsheets/d/1bk2tfbkZPTmmGTM-WkSb1M_CE6jEKkAA4qdw6de3y4w/pub?gid=0&single=true&output=csv";
+	_nanoTatva.inflateUI();
+	/*var url="https://docs.google.com/feeds/download/spreadsheets/Export?key=1bk2tfbkZPTmmGTM-WkSb1M_CE6jEKkAA4qdw6de3y4w&exportFormat=csv&gid=0";
 	$.ajax({url:url,headers: {"Access-Control-Allow-Origin": "http://194.135.84.130/nanotatva/nano_tech/"},success : function(result){
 		var rowList = result.split("\n");
 		var product_list_from_csv = [];
@@ -442,7 +442,7 @@ window.onload = function(){
 		}
 		_nanoTatva.items_list = product_list_from_csv;
 		_nanoTatva.inflateUI();
-	}});
+	}});*/
 };
 </script>
 
