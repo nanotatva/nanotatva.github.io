@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en-US" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NanoTatva</title>
+
+<link href="./images/logo.png" rel="shortcut icon" type="image/x-icon">
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+img.sliding-imgs{
+	border-radius: 2px;
+}
+.slider-caption{
+	color: #FEFEFE;
+	text-shadow:2px 2px 2px #878787;
+}
+#about-us-txts p{
+	font-size: 16px;
+	text-align: left;
+}
+.product-item{
+	width:200px;height:150px;display:inline-block;
+}
+.product-item img{
+	cursor:pointer;
+}
+.product-super-title{
+	border-top: solid 1px #CCCCCC;color:#000000;font-size:25px;padding-top:5px;margin-top:20px;
+}
+#product-modal{display:none;overflow: auto;;position:fixed;width:100%;height:100%;padding:20px;background-color:rgba(51, 51, 51,0.7);z-index:99999;-webkit-user-select: none; -moz-user-select: none;-ms-user-select: none; -o-user-select: none; user-select: none;}
+.about-sub-product{display: none;}
+#product_modal_title{width: 100%;text-align: center;color: #5AA87B;}
+#product_modal_send_enq{width: 100%;border-top: solid 1px #CCCCCC;text-align: center;font-size: 18px;}
+#product_modal_form{width: 70%;text-align: left;}
+#pm_form_submit{width: 200px;}
+#pm_form_info{font-size: 12px;color: #ff0000;}
+#contactus_info{font-size: 12px;color: #ff0000;}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./resources/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="_tk-bootstrap-css" href="./resources/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="_tk-style-css" href="./resources/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="_twl-fontawesome-icons-css-css" href="./resources/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="_twl-uikit-css" href="./resources/uikit.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="_twl-preloader-css-css" href="./resources/preloader.css" type="text/css" media="all">
+<link rel="stylesheet" id="_twl-css-css" href="./resources/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="_twl-responsive-css" href="./resources/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="dynamic-css-css" href="./resources/admin-ajax.css" type="text/css" media="all">
+<link rel="stylesheet" id="_twl-animate-css-css" href="./resources/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="_supersized_css_01-css" href="./resources/supersized.css" type="text/css" media="all">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" id="_supersized_css_02-css" href="./resources/supersized.shutter.css" type="text/css" media="all">
+<style id="__EPYT__style-inline-css" type="text/css">
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+</style>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+_nanoTatva = {
+	enquiry_url : "http://194.135.84.130/nanotatva/msg-enquiry-nanotatva/index.php",
+	items_list : [
+		{
+			is_declared : false,
+			id : 0,
+			title : "Metal Nanoparticles",
+			items : [
+				{
+					is_declared : false,
+					id : 0,
+					title : "Gold",
+					desc : "Gold idjfjskd jhsdfjk shjkfhfgjk dfjkghkjdhf jkgjkdfkghkj kjhfgk</br>hfj shdkjfh isd hifgiudg iuhidjfhvjd ghkjdfhk jhkdj",
+					src : "./images/gold0.png"
+				},
+				{
+					is_declared : false,
+					id : 1,
+					title : "Silver",
+					desc : "[Siver DESCRIPTION]",
+					src : "./images/silver0.png"
+				},
+				{
+					is_declared : false,
+					id : 2,	
+					title : "Platinum",
+					desc : "[Platinum DESCRIPTION]",
+					src : "./images/paltinum0.png"
+				},
+				{
+					is_declared : false,
+					id : 3,
+					title : "Nickel",
+					desc : "[Nickel DESCRIPTION]",
+					src : "./images/nickel0.png"
+				},
+				{
+					is_declared : false,
+					id : 4,
+					title : "Tin",
+					desc : "[Tin DESCRIPTION]",
+					src : "./images/tin0.png"
+				}
+			]
+		},
+		{
+			is_declared : false,
+			id : 1,
+			title : "Metal Oxide Nanoparticles",
+			items : [
+				{
+					is_declared : false,
+					id : 0,
+					title : "Zinc Oxide",
+					desc : "[prityzinta DESCRIPTION]" ,
+					src : "./images/zinc1.png"
+				},
+				{
+					is_declared : false,
+					id : 1,
+					title : "Nickel Oxide",
+					desc : "[chalnikal DESCRIPTION]",
+					src : "./images/nickel1.png"
+				},
+				{
+					is_declared : false,
+					id : 2,
+					title : "Aluminium Oxide",
+					desc : "[ilovemunni DESCRIPTION]",
+					src : "./images/aluminium1.png"
+				},
+				{
+					is_declared : false,
+					id : 3,
+					title : "Iron Oxide",
+					desc : "[ironman DESCRIPTION]",
+					src : "./images/iron1.png"
+				},
+				{
+					is_declared : false,
+					id : 4,
+					title : "Cerium Oxide",
+					desc : "[sriram DESCRIPTION]",
+					src : "./images/cerium1.png"
+				},
+				{
+					is_declared : false,
+					id : 5,
+					title : "Titanium Dioxide",
+					desc : "[titanic DESCRIPTION]",
+					src : "./images/titanium1.png"
+				}
+			]
+		},
+		{
+			is_declared : false,
+			id : 2,
+			title : "Quantum Dots",
+			items : [
+				{
+					is_declared : false,
+					id : 0,
+					title : "Carbon Quantum dots",
+					desc : "[barboun DESCRIPTION]",
+					src : "./images/carbon2.png"
+				},
+				{
+					is_declared : false,
+					id : 1,
+					title : "Cadmium Selenide",
+					desc : "[selenagomez DESCRIPTION]",
+					src : "./images/cadmium2.png"
+				},
+				{
+					is_declared : false,
+					id : 2,
+					title : "Cadmium Telluride",
+					desc : "[tailor DESCRIPTION]",
+					src : "./images/telluride2.png"
+				}
+			]
+		}
+	],
+	getItemsCount : function(){
+		return this.items_list.length;
+	},
+	getItemObjAt : function(i){ //item object {CONSTRUCTOR}
+		var itemObj  = this.items_list[i];
+		if(itemObj.is_declared){
+			return itemObj;
+		}
+		itemObj.getSubItemsCount = function(){
+			return this.items.length;
+		}
+		itemObj.getItemId = function(){
+			return this.id;
+		};
+		itemObj.getItemTitle = function(){
+			return this.title;
+		};
+
+		itemObj.getSubItemObjAt = function(i){ //sub-item objct {CONSTRUCTOR}
+			var subItemObj = itemObj.items[i];
+			if(subItemObj.is_declared){
+				return subItemObj;
+			}
+			subItemObj.getSubItemId = function(){
+				return this.id;
+			};
+			subItemObj.getSubItemTitle = function(){
+				return this.title;
+			};
+			subItemObj.getSubItemDescription = function(){
+				return this.desc;
+			};
+			subItemObj.getSubItemSrc = function(){
+				return this.src;
+			};
+			return subItemObj;
+		};
+		return itemObj;
+	},
+	isSendingProd : false,
+	isSendingCont : false,
+	sendProductEnuiry : function(isProduct){
+		var obj = {};
+		var name_e,email_e,phone_e,enq_e,btn,info;
+		if(isProduct){
+			if(this.isSendingProd){
+				return;
+			}
+			this.isSendingProd = true;
+			obj.pid = document.getElementById("pm_pid").value;
+			name_e = document.getElementById("pm_name");
+			email_e = document.getElementById("pm_email");
+			phone_e = document.getElementById("pm_phone");
+			enq_e = document.getElementById("pm_enq");
+			info = document.getElementById("pm_form_info");
+			obj.which = 0;
+		}else{
+			if(this.isSendingCont){
+				return;
+			}
+			this.isSendingCont = true;
+			name_e = document.getElementById("c-name");
+			email_e = document.getElementById("c-email");
+			phone_e = document.getElementById("c-phone");
+			enq_e = document.getElementById("c-enq");
+			info = document.getElementById("contactus_info");
+			obj.which = 1;
+		}
+		info.innerHTML = "";
+		if(name_e.value.trim() == ""){
+			if(isProduct){
+				this.isSendingProd = false;
+			}else{
+				this.isSendingCont = false;
+			}
+			info.innerHTML = "Please enter you name.";
+			return;
+		}else{
+			obj.name = name_e.value.trim();
+		}
+		var c = false;
+		if(email_e.value.trim() != ""){
+			if(email_e.value.split("@").length != 2 || email_e.value.split("@")[1].split(".").length != 2){
+				info.innerHTML = "Please enter valid email.";
+				if(isProduct){
+					this.isSendingProd = false;
+				}else{
+					this.isSendingCont = false;
+				}
+				return;
+			}else{
+				obj.email = email_e.value.trim();
+			}
+		}else{
+			c = true;
+			obj.email = "NA";
+		}
+
+		if(phone_e.value.trim() != ""){
+			if(c){
+				c = false;
+			}
+			obj.phone = phone_e.value.trim();
+		}else{
+			obj.phone = "NA";
+		}
+		if(c){
+			info.innerHTML = "Please enter atleast one- email or contact number.";
+			if(isProduct){
+				this.isSendingProd = false;
+			}else{
+				this.isSendingCont = false;
+			}
+			return;
+		}
+		if(enq_e.value.trim() == ""){
+			info.innerHTML = "Please enter your enquiry.";
+			if(isProduct){
+				this.isSendingProd = false;
+			}else{
+				this.isSendingCont = false;
+			}
+			return;	
+		}else{
+			obj.enq = enq_e.value.trim();
+		}
+		if(obj.which == 0){
+			document.getElementById("pm_form_submit").value = "Sending...";
+		}else if(obj.which == 1){
+			document.getElementById("c-submit-enq").value = "Sending...";
+		}
+		$.post(_nanoTatva.enquiry_url,
+	        obj,
+	        function(data,status){
+	        	if(status == "success" && data.success){
+					if(obj.which == 0){
+						document.getElementById("pm_form_submit").value = "Sent Successfully";
+					}else if(obj.which == 1){
+						document.getElementById("c-submit-enq").value = "Sent Successfully";
+					}
+	        	}else{
+	        		if(obj.which == 0){
+						document.getElementById("pm_form_submit").value = "Failed. Try agin.";
+					}else if(obj.which == 1){
+						document.getElementById("c-submit-enq").value = "Failed. Try agin.";
+					}
+	        	}
+
+	        	if(obj.which == 0){
+					_nanoTatva.isSendingProd = false;
+				}else if(obj.which == 1){
+					_nanoTatva.isSendingCont = false;
+				}
+	        	console.log(data.success+"|"+status);
+	        });
+	},
+	onSubItemClick : function(imageView){
+		var a = _nanoTatva.items_list[imageView.getAttribute("title")];
+		var b = a.items[imageView.getAttribute("subtitle")];
+		document.getElementById("pm_pid").value = a.title+" | "+b.title;
+		document.getElementById("product_modal_title").innerHTML = "<u>"+a.title+" | "+b.title+"</u>";
+		document.getElementById("product_modal_src").src = b.src;
+		document.getElementById("product_modal_desc").innerHTML = b.desc;
+		document.getElementById("product-modal").style.display = "block";
+	},
+	inflateUI : function(){
+		document.getElementById("load-products").style.display = "none";
+		var itemsCount = this.getItemsCount();
+		var inflateObj = {uiSection : document.getElementById("products-ui")};
+		inflateObj.addItemTitleHeader = function(title){
+			var lineBreaker = document.createElement('br');
+			var headerDiv = document.createElement('div');
+			headerDiv.setAttribute("class", "product-super-title");
+			headerDiv.innerHTML = "<b>"+title+"</b>";
+			this.uiSection.appendChild(headerDiv);
+			this.uiSection.appendChild(lineBreaker);
+		};
+		inflateObj.addSubItems = function(id,subid,subtitle,desc,src){
+			var lineBreaker = document.createElement('br');
+			this.uiSection.appendChild((function(){
+				var mainDiv = document.createElement('div');
+				mainDiv.setAttribute("class","product-item");
+				mainDiv.appendChild((function(){
+					var imgView = document.createElement('img');
+					imgView.setAttribute("width","100");
+					imgView.setAttribute("height","70");
+					imgView.setAttribute("src",src);
+					imgView.setAttribute("title",id);
+					imgView.setAttribute("subtitle",subid);
+					imgView.setAttribute("onclick","{_nanoTatva.onSubItemClick(this);}")
+					return imgView;
+				})());
+				mainDiv.appendChild(lineBreaker);
+				mainDiv.appendChild((function(){
+					var h4 = document.createElement('h4');
+					h4.innerHTML = "<b>"+subtitle+"</b>";
+					return h4;
+				})());
+				return mainDiv;
+			})());
+		};
+		for(var i=0;i<itemsCount;i++){
+			var item = this.getItemObjAt(i);
+			inflateObj.addItemTitleHeader(item.getItemTitle());
+			var subItemsCount = item.getSubItemsCount();
+			for(var j=0;j<subItemsCount;j++){
+				var subItem = item.getSubItemObjAt(j);
+				inflateObj.addSubItems(item.getItemId(),subItem.getSubItemId(),subItem.getSubItemTitle(),subItem.getSubItemDescription(),subItem.getSubItemSrc());
+			}
+
+		}
+	}
+}
+window.onload = function(){
+	document.getElementById("close_product_modal").onclick = function(){
+		document.getElementById("product-modal").style.display = "none";
+	};
+	document.getElementById("pm_form_submit").onclick = function(){
+		_nanoTatva.sendProductEnuiry(true);
+	};
+	document.getElementById("c-submit-enq").onclick = function(){
+		_nanoTatva.sendProductEnuiry(false);
+	};
+	//_nanoTatva.inflateUI();
+	var url="https://docs.google.com/spreadsheets/d/1bk2tfbkZPTmmGTM-WkSb1M_CE6jEKkAA4qdw6de3y4w/pub?gid=0&single=true&output=csv";
+	$.ajax({url:url,headers: {"Access-Control-Allow-Origin": "http://194.135.84.130/nanotatva/nano_tech/"},success : function(result){
+		var rowList = result.split("\n");
+		var product_list_from_csv = [];
+		var type = [];
+		for(var i=1;i<rowList.length;i++){
+			var columnList = rowList[i].split(",",4);
+			if(columnList.length == 4){
+				var type_id = type.indexOf(columnList[0].trim());
+				if(type_id == -1){
+					type_id = type.length;
+					type.push(columnList[0].trim());
+					product_list_from_csv.push({
+						is_declared : false,
+						id : type_id,
+						title : columnList[0],
+						items : []
+					});
+				}
+				var subTypeId = product_list_from_csv[type_id].items.length;
+				product_list_from_csv[type_id].items.push({
+					is_declared : false,
+					id : subTypeId,
+					title : columnList[1],
+					desc : columnList[3],
+					src : columnList[2]
+				});
+			}
+		}
+		_nanoTatva.items_list = product_list_from_csv;
+		_nanoTatva.inflateUI();
+	}});
+};
+</script>
+
+<script type="text/javascript">
+	function initialize() {
+	  var mapProp = {
+	    center:new google.maps.LatLng(28.6100,77.2300),
+	    zoom:14,
+	    mapTypeId:google.maps.MapTypeId.ROADMAP,
+	    scrollwheel:  false
+	  };
+	  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script type="text/javascript" src="./resources/jquery.js"></script><style type="text/css"></style>
+<script type="text/javascript" src="./resources/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./resources/bootstrap.js"></script>
+<script type="text/javascript" src="./resources/bootstrap-wp.js"></script><style>body{display:none;}</style>
+<meta name="generator" content="WordPress 4.3.1">
+<script>
+  
+</script><script async="true" type="text/javascript" src="http://a.adroll.com/j/roundtrip.js"></script></head>
+
+<body class="home page page-id-25 page-template page-template-page-background-image-slider page-template-page-background-image-slider-php" style="display: block;">
+	<div id="product-modal" align="center">
+		<div style="background:#ffffff;width:70%;border-radius:2px;">
+			<div style="width:100%;" align="right">
+				<img id="close_product_modal" style="width:30px;padding:5px;cursor:pointer;" src="./images/close.png"/></br>
+			</div></br>
+			<b id="product_modal_title"></b></br>
+			<h4></h4>
+			<div style="display:inline-block;padding:5px;width:45%;">
+				<img id="product_modal_src" style="width:100%;"/>
+			</div>
+			<div style="display:inline-block;padding:5px;width:45%;text-align:left;">
+				<span id="product_modal_desc"></span></br>
+			</div></br>
+			<div id="product_modal_send_enq">
+				<b>Send enquiry about this product</b></br>
+				<span id="pm_form_info"></span>
+			</div></br>
+			<div id="product_modal_form">
+				<form role="form">
+					<input type="hidden" id="pm_pid"/>
+					<input type="text" class="form-control" id="pm_name" placeholder="Name"></br>
+					<input type="email" class="form-control" id="pm_email" placeholder="Email"></br>
+					<input type="text" class="form-control" id="pm_phone" placeholder="Contact Number"></br>
+					<textarea  class="form-control" rows="5" id="pm_enq" placeholder="Enquiry..."></textarea></br>
+					<input type="button" value="Send" class="btn btn-default button-send" id="pm_form_submit">
+				</form>
+			</div></br></br></br></br>
+		</div>
+	</div>
+<nav class="navbar navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				    <span class="icon-bar"></span>
+				</button>			
+				<a class="navbar-brand logo logo-image-header" href="index.html" title="Notice" rel="home">	
+					<img src="./images/logo.png" alt="logo" style="display:inline-block;">
+					<span style="display:inline-display;font-family:arial;">nanotatva</span>
+				</a>
+			</div>
+						
+			<div class="collapse navbar-collapse">
+				<div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
+					<ul id="main-menu" class="nav navbar-nav">
+						<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home scrollTo menu-item-17"><a title="Features" href="#features">Products</a></li>
+						<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home scrollTo menu-item-16"><a title="Newsletter" href="#newsletter">About Us</a></li>
+						<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home scrollTo menu-item-13"><a title="Contact" href="#contact">Contact Us</a></li>
+						<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home scrollTo menu-item-14"><a title="Blog" target="_blank" href="#blog">Blog</a></li>
+					</ul>
+				</div>				
+			</div> 
+		</div>
+	</nav>
+<section class="main" style="display: none;">
+	<div id="loading-animation" style="display: none;">
+		<ul class="bokeh">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</section>
+		
+	<section id="homepage">
+		<div class="container" style="margin-top:60px;" >
+			<div class="row">
+				<div class="intro col-md-5 animate fadeIn animated" data-animate="fadeIn">					
+					<h1> <em>NanoTatva</em></h1>
+					<h3>We Cook Quality</h3>
+					
+					<a class="btn btn-default btn-lg" href="#features" >
+						<b>Our Products</b>
+					</a>
+				</div> 
+				
+				<div class="col-md-6 col-md-offset-1 animate fadeIn animated" data-animate="fadeIn" style="margin-bottom:50px;">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					  </ol>
+					 
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active">
+					      <img src="./images/slide_1.png" alt="..." class="sliding-imgs">
+					      <div class="carousel-caption">
+					          <h3 class="slider-caption">Tested materials of premium quality!</h3>
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img src="./images/slide_2.png" alt="..." class="sliding-imgs">
+					      <div class="carousel-caption">
+					          <h3 class="slider-caption">Join us and evidence a better change!</h3>
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img src="./images/slide_3.png" alt="..." class="sliding-imgs">
+					      <div class="carousel-caption">
+					          <h3 class="slider-caption">Want to make research your favorite game? Ask us, and we will make it for you.</h3>
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img src="./images/slide_4.png" alt="..." class="sliding-imgs">
+					      <div class="carousel-caption">
+					          <h3 class="slider-caption">Join us and evidence a stairway to technological heaven.</h3>
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img src="./images/slide_5.png" alt="..." class="sliding-imgs">
+					      <div class="carousel-caption">
+					          <h3 class="slider-caption">We can make  anything, just ask us !</h3>
+					      </div>
+					    </div>
+					  </div>
+					 
+					  <!-- Controls -->
+					  <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"><</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right">></span>
+					  </a>-->
+					</div> <!-- Carousel -->
+				</div>
+			</div>
+		</div>
+		<a class="scroll-down" href="#features" title=""><img src="./images/scroll-down.png" alt=""></a>
+	</section>
+	<section id="features">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate fadeIn animated" data-animate="fadeIn">
+					<span class="section-name"><em>Our Products</em></span>
+					<h2></h2>
+					<span class="line"></span>
+					<p></p>
+				</div>
+			</div>
+			<div class="row" id="products-ui">
+				<div id="load-products">
+					<span>Loading...</span></br>
+					<img src="./images/progress.gif"/>
+				</div>
+				<!--<div class="product-super-title"><b>Metal Nanoparticles</b></div></br>
+				<div class="product-item">
+					<img name="hello" onclick="{_nanoTatva.showProductDetails(this);}" width="100" height="70" src="http://www.nano-xpert.com/uploads/1/5/3/6/15369490/s243143253328743667_p1_i1_w640.jpeg" >	</br>
+					<h4><b>
+						Gold
+					</b></h4>
+				</div>-->
+			</div> 
+		</div>
+	</section> 
+		
+	<section id="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate fadeIn animated" data-animate="fadeIn">
+					<span class="section-name"><em>About Us</em></span>
+					<h2></h2>
+					<span class="line"></span></br>
+					<div id="about-us-txts">
+						<p>We are a team of researchers with international experience and having expertise of many years 
+						in the preparation of nano-materials. We assure our buyers with superior quality of products and 
+						on time services. We deliver what we promise and believe in building a better buyer-seller 
+						relationship.</p>
+
+						<p>NanoRex is one of the very few leading manufactures and suppliers of high purity Nano-
+						materials powder and dispersions in India. We deal in all kinds of customizable Metal/Metal-
+						oxide nano-particles and Quantum dots.</p>
+
+						<p>Nanorex has made its name as a superior and trusted supplier of an array of nano-materials 
+						within buyers and collaborations in more than 10 countries including Belgium, Spain, Germany 
+						,Ukraine, Singapore and Australia. We supply nano-materials in quantities as low as 
+						1gm to as high as 10 Kg and more. Our products are assured of being in complete assent with 
+						the international standards and are prepared using the finest quality of chemicals and other 
+						basic materials.</p>
+
+						<p>For other desired nanoparticles to order, contact us and we will do it for you.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+	</section> 
+		
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="heading col-md-8 col-md-offset-2 animate fadeIn animated" data-animate="fadeIn">
+					<span class="section-name"><em>Contact Us</em></span>
+					<h2>We love you and your queries! Feel free to ask .</h2>
+					<span class="line"></span>
+					<p></p>
+				</div>
+			</div>
+							
+				<div class="row">	
+					<div class="col-md-10 col-md-offset-1 animate fadeIn animated" data-animate="fadeIn">	
+						<div role="form" class="wpcf7" id="wpcf7-f51-o2" lang="en-US" dir="ltr">
+		<form action="#" method="post" class="wpcf7-form sent" novalidate="novalidate">
+			<div style="display: none;">
+			<input type="hidden" name="_wpcf7" value="51">
+			<input type="hidden" name="_wpcf7_version" value="4.3">
+			<input type="hidden" name="_wpcf7_locale" value="en_US">
+			<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f51-o2">
+			<input type="hidden" name="_wpnonce" value="6213d812e5">
+			</div>
+			<div class="col-md-6" style="border-right: solid 1px #CCCCCC;margin-bottom:10px;">
+				<p>
+					<span id="contactus_info"></span></br></br>
+					<span class="wpcf7-form-control-wrap Name"><input type="text" id="c-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Name"></span><br>
+					<span class="wpcf7-form-control-wrap Email"><input type="email" id="c-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Email"></span><br>
+					<span class="wpcf7-form-control-wrap Number"><input type="text" id="c-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Contact Number"></span><br>
+					<span class="wpcf7-form-control-wrap Message"><textarea id="c-enq" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form-control" aria-required="true" aria-invalid="false" placeholder="Enquiry..."></textarea></span><br>
+					<input type="button" id="c-submit-enq" value="Send" class="btn btn-default button-send">
+				</p>
+			</div>
+		</form>
+
+		<div class="col-md-6">
+			<b style="font-size:20px;">Contact Information</b></br>
+			<b>Psi Nanotech Pvt. Ltd.</b></br>
+			Phone: [9911666402,9911825909]</br>
+			Email: [Nanotech@gmail.com]</br>
+			Hours of Operation</br>
+			Mon-Sat: 9-5pm</br>
+			Sun: Closed</br></br>
+			Address</br>
+			[42, Chaudhary Enclave, Sec-23, Sanjay Nagar, Ghaziabad-201002]</br>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+</br></br>
+<div  id="googleMap" style="width:80%;height:270px;border-radius:2px;" class="container"></div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row footer-content">
+				<div class="col-md-10 col-md-offset-1 animate fadeIn animated" data-animate="fadeIn">
+					<hr>
+					<a href="./"><h1 class="logo">
+						<img src="./images/logo.png" style="width:60px;" alt="logo">					
+					</h1></a>
+					<p></p><p>Copyright © 2015 | nanoTatva - All rights reserved.</p>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</footer> <!-- END FOOTER SECTIONS --><script type="text/javascript">
+adroll_adv_id = "TVC6CTT2W5FRTII5HW5AGY";
+adroll_pix_id = "43U3JBISLFFQLAWTBHOWO3";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script><script type="text/javascript" src="./resources/jquery.form.min.js"></script>
+<script type="text/javascript">
+</script>
+<script type="text/javascript" src="./resources/scripts.js"></script>
+<script type="text/javascript" src="./resources/fitvids.min.js"></script>
+<script type="text/javascript" src="./resources/skip-link-focus-fix.js"></script>
+<script type="text/javascript" src="./resources/uikit.min.js"></script>
+<script type="text/javascript" src="./resources/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./resources/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="./resources/modernizr.js"></script>
+<script type="text/javascript" src="./resources/supersized.3.2.7.min.js"></script>
+<script type="text/javascript" src="./resources/supersized.shutter.min.js"></script>
+<script type="text/javascript" src="./resources/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="./resources/grid.js"></script>
+<script type="text/javascript" src="./resources/jquery.ajaxchimp.js"></script>
+<script type="text/javascript" src="./resources/jquery.ajaxchimp.langs.js"></script>
+		<script type="text/javascript">
+			
+jQuery(function($){
+	"use strict";
+	$.supersized({ 
+				slideshow               :   0, 
+		autoplay				:	1,			
+		start_slide             :   1,			
+		stop_loop				:	0,			
+		random					: 	0, slide_interval          :   3000,transition          :   1,
+		transition_speed		:	1500,		
+		new_window				:	1,			
+		pause_hover             :   0,			
+		keyboard_nav            :   1,			
+		performance				:	1,			
+		image_protect			:	1,								   
+		
+		min_width		        :   0,			
+		min_height		        :   0,			
+		vertical_center         :   1,			
+		horizontal_center       :   1,			
+		fit_always				:	0,			
+		fit_portrait         	:   1,			
+		fit_landscape			:   0,			
+
+		slide_links				:	'blank',	
+		thumb_links				:	1,			
+		thumbnail_navigation    :   0,			
+		slides 					:  	[{image : 'http://sandermechanical.com/wp-content/uploads/2015/05/Laboratory.jpg'}],
+										
+		progress_bar			:	1,								
+		mouse_scrub				:	0
+			
+	});
+});		</script>	
+		
+	<script type="text/javascript">
+		  
+  jQuery('#menu-item-15').bind('click', function(e){(function smoothscroll(){
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+         window.requestAnimationFrame(smoothscroll);
+         window.scrollTo (0,currentScroll - (currentScroll/5));
+    }
+})();});
+
+//code to make blog card clickble
+function blogclick(sender){
+    window.location = jQuery(sender).find('a').attr('href');
+}
+jQuery(document).ready(function(){
+    x = jQuery('#menu-item-299').children();
+    x.unbind();    
+});
+			
+		
+		jQuery('.navbar-nav > li.scrollTo > a').bind('click', function(e) {
+		    e.preventDefault();
+		    var target = this.hash;
+		    jQuery.scrollTo(target, 1250, {
+		    	easing: 'swing',
+		    	axis: 'y',
+		    	offset: -45
+		    });
+		});
+
+		jQuery('.navbar-brand').bind('click', function(e) {
+		    e.preventDefault();
+		    var target = this.hash;
+		    jQuery.scrollTo(0, 1250, {
+		    	easing: 'swing',
+		    	axis: 'y'
+		    });
+		});
+		
+		jQuery(function() {
+			var bar = jQuery('nav');
+			var top = bar.css('top');
+			var ww = jQuery(window).width();
+			var navigationHeight = -jQuery('.collapse').height();
+			var mobileTop = Math.floor(navigationHeight - 60);
+			
+			jQuery(window).scroll(function() {
+					if(jQuery(this).scrollTop() > 0) {
+							bar.stop().animate({top : '0'}, 300);
+					} else {
+							if(ww < 768) {
+									bar.stop().animate({top : mobileTop}, 600);
+							} else {
+									bar.stop().animate({top : top}, 300);
+							}
+					}  
+			});
+		});
+		
+		jQuery(document).ready(function(){	
+			
+							/* ==============================================
+				    /* GALLERY - STYLE 2
+					================================================== */
+						jQuery('#og-grid').mixitup();
+						Grid.init();
+						
+		});
+		
+	</script>
+	</body>
+</html>
